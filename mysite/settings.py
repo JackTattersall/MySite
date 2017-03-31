@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'blog',
     'taggit',
+    'haystack',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -111,3 +112,13 @@ EMAIL_HOST_USER = 'jacktattersall1@gmail.com'
 EMAIL_HOST_PASSWORD = 'paigeleah1'
 EMAIL_PORT = 587
 ACCOUNT_EMAIL_VERIFICATION = 'none'
+
+# Haystack connections
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
+        'URL': 'http://127.0.0.1:9200/',
+        'INDEX_NAME': 'blog',
+    },
+}
