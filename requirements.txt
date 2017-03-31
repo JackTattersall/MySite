@@ -3,6 +3,7 @@ Django==1.8.6
 django-haystack==2.6.0
 django-taggit==0.17.1
 elasticsearch==5.2.0
+gunicorn==19.7.1
 Markdown==2.6.2
 packaging==16.8
 pyparsing==2.2.0
