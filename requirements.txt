@@ -1,5 +1,5 @@
 appdirs==1.4.3
-Django==1.8.6
+Django==1.11.23
 django-haystack==2.6.0
 django-taggit==0.17.1
 elasticsearch==5.2.0
